@@ -2,13 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MatoCtrl : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-
-    public void OnTouched()
-    {
-        Destroy(gameObject);
-    }
+    GameObject Mato;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +14,6 @@ public class MatoCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Mato = GameObject.FindWithTag("Mato");
     }
 }
